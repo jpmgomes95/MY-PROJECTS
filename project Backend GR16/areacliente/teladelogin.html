@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\folhaTL.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <div id="imglogo"><a href="../index.html"><img src="../areacliente/imagens/logo_branca.png" alt="logo_da_telecall"></a></div>                 
+            <fieldset>
+                 <div id="title"><h2>LOGIN</h2></div>
+                <div id ="loginuser">
+                    <label for="username" class="labelinput"><b>Username:</b></label>
+                    <br>
+                    <input type="text" name="username" id="username" class="inputuser">
+                </div>
+                <br><br>
+                <div id ="password">
+                    <label for="senha" class="labelinput"><b>Senha:</b></label>
+                    <br>
+                    <input type="password" name="senha" id="senha" class="inputuser">
+                </div>
+                <br>
+                <h2><P>Não possui uma conta no nosso site,</P><a href="./formulario.html">cadastre-se aqui!</a></h2>
+                <p></p>
+                <br><br>
+                <button type="submit" class="submit" onclick="logar()"><b>ENTRAR</b></button>
+                <br><br>
+                <button type="submit" class="submit"><b>ALTERAR SENHA</b></button>
+                <BR></BR>
+                <button type="reset" class="submit"><b>LIMPAR</b></button>
+            </fieldset>
+        </form>
+    </div>
+    <script src="../js/pasta.js" ></script>
+</body>
+</html>

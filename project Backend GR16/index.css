@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #f2f2f2;
+}
+#darkmod{
+  background: #141313;
+  display: flex;
+  padding-left: 35%;
+
+}
+nav{
+  z-index: 1;
+    position: fixed;
+    width: 100%;
+  background: rgb(1, 1, 126);
+  box-shadow: 0 0 15px #000000;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 80px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+  padding-top: 10px;
+}
+nav ul li{
+  display: inline-block;
+  background: rgb(0, 0, 126);
+  margin: 0 5px;
+}
+nav ul li a{
+  color: rgb(255, 255, 255);
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 15
+  
+  
+  
+  px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: rgb(255, 0, 0);
+  border-radius: 5px;
+  box-shadow:  0 0 5px #ff0000,
+               0 0 5px #ff0505;
+               
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.bi {
+  font-size: 1.3rem;
+}
+
+.bi-moon {
+  display: none;
+}
+
+.dark,
+.dark header {
+  background-color: #263238;
+  color: #fff;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+} 
+
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -10px;
+  top: 100px;
+  border-top: 3px solid rgb(255, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 190px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+  font-size: 15px;
+  
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon,input{
+  display:none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 1200px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
+    margin-bottom: 10px;
+    
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+button.areacliente{
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 150px;
+  height: 33px;
+  background-color: rgb(0, 0, 66);
+  border-radius: 15px;
+  border: solid;
+  border-color: rgb(0, 0, 66);
+  
+  
+  
+}
+button.areacliente a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+#carouselExampleSlidesOnly{
+  padding-top: 105px;
+}
+
+
+
+section.cpaas{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5%;
+    font-size: 18px;
+}
+
+.cpaas h1{
+  padding-top: 100px;
+  color: #353535;
+  font-size: 40px;
+    
+}
+
+b.cpaascomunications{   
+    color: blue;
+    font-size: 25px;
+}
+
+.cpaas i{    
+    color: rgb(43, 43, 43);
+    font-size: 23px;
+}
+
+.cpaas p{
+    color: #333;
+    
+}
+
+.modavoimg{
+  margin-top: 150px;
+  padding-right: 100px;
+  float: right;
+  flex-direction: row;
+}
+@media (max-width: 1056px) {
+  .modavoimg{
+    display: none;
+  }
+  
+}
+
+section.cpaastransformacao{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
+  padding-left: 5%;
+  font-size: 17px;
+  
+}
+
+section.cpaastransformacao h1{
+  color: #353535;
+  font-size: 40px;
+}
+
+.cpaastransformacao p{
+  color: #333;
+  margin-top: 70px;
+}
+.cpaasimg2{
+
+  float: right;
+  margin-top: -500px;
+  margin-right: 70px;
+  border-radius: 15px;
+
+}
+@media (max-width: 1215px){
+  .cpaasimg2{
+    float: none;
+    width: 500px;
+    margin-top: 50px;
+
+
+  }
+}
+@media (max-width:710px){
+  .cpaasimg2{
+    size: 100%;
+    padding-left: 10px;
+    width: 80%;
+    height: 90%;
+  }
+}
+
+div.usostitulo{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
+  color: #353535;
+  padding-left: 5%;
+  font-size: 18px;
+}
+
+section.usosparte{
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+  padding-left: 1%;           
+    
+}
+
+.childusos1{
+    padding: 30px;
+}
+.childusos1 h3{
+    color: #161616;
+    margin-left: 40px;
+}
+.imgusos1{
+  margin-left: 40px;
+}
+
+.childusos2{
+  padding: 30px;
+}
+.childusos2 h3{
+  color: #161616;
+  margin-left: 47px;
+}
+.imgusos2{
+margin-left: 33px;
+}
+
+.childusos3{
+  padding: 30px;
+}
+.childusos3 h3{
+  color: #161616;
+  margin-left: 25px;
+}
+.imgusos3{
+  margin-left: 45px;
+}
+
+.childusos4{
+  padding: 30px;
+}
+.childusos4 h3{
+  color: #161616;
+  margin-left: 50px;
+}
+.imgusos4{
+  margin-left: 30px;
+}
+
+div.exemplostitulo{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
+  color: #353535;
+  padding-left: 5%;
+  font-size: 18px;
+}
+
+section.exemplosparte{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+    
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.childexemplos{
+    padding: 10px;
+}
+
+.vantagenstelecalltitulo{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
+  color: #353535;
+  padding-left: 5%;
+  font-size: 18px;
+}
+
+section.vantagenstelecall{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 50px;
+  padding-left: 8%;
+  padding-bottom: 2%;
+  font-size: 20px;
+}
+
+.vantagenstelecall b{   
+    color: #e70d0d;
+    font-size: 21px;
+    font-weight: 1;
+}
+
+
+.quemsomostitulo{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
+  color: #353535;
+  padding-left: 5%;
+  font-size: 17px;
+}
+
+section.quemsomos{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 50px;
+  padding-left: 8%;
+  padding-bottom: 10%;
+  font-size: 19px;
+}
+
+.quemsomosimg{
+
+  float: right;
+  margin-top: -400px;
+  margin-right: 70px;
+  border-radius: 15px;
+
+}
+@media (max-width: 1215px){
+  .quemsomosimg{
+    float: none;
+    width: 500px;
+    margin-top: 50px;
+  }
+}
+@media (max-width:710px){
+  .quemsomosimg{
+    size: 100%;
+    padding-left: 10px;
+    width: 80%;
+    height: 90%;
+  }
+}
+.cpaasimgrj{
+  padding: 10px;
+}
+
+@media (max-width:710px){
+  .cpaasimgrj{
+    size: 100%;
+    padding-left: 10px;
+    width: 100%;
+    height: 90%;
+  }
+}
+
+
+
+
+
+
