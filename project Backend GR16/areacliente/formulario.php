@@ -1,30 +1,3 @@
-<?php
-
-    if(isset($_POST['submit']))
-    {
-        include_once('config.php');
-
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
-        $confirmar_senha = $_POST['confirmar_senha'];
-        $login = $_POST['login'];
-        $nome_marterno = $_POST['nome_marterno'];
-        $genero = $_POST['genero'];
-        $data_nascimento = $_POST['data_nascimento'];
-        $telefone = $_POST['telefone'];
-        $celular = $_POST['celular'];
-        $cidade = $_POST['cidade'];
-        $estado = $_POST['estado'];
-        $endereço = $_POST['endereco'];
-        $cep = $_POST['cep'];
-        $cpf = $_POST['cpf'];
-
-        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,confirmar_senha,login,nome_marterno,genero,
-        data_nascimento,telefone,celular,cidade,endereco,cep,cpf) VALUES ('$nome','$email','$senha','$confirmar_senha','$login','$nome_marterno','$genero',
-        '$data_nascimento','$telefone','$celular','$cidade','$estado','$endereço','$cep','$cpf')");
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +7,33 @@
     <title>Document</title>
 </head>
 <body>
+<?php
+
+if(isset($_POST['submit']))
+{
+    include_once('config.php');
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $confirmar_senha = $_POST['confirmar_senha'];
+    $login = $_POST['login'];
+    $nome_marterno = $_POST['nome_marterno'];
+    $genero = $_POST['genero'];
+    $data_nascimento = $_POST['data_nascimento'];
+    $telefone = $_POST['telefone'];
+    $celular = $_POST['celular'];
+    $cidade = $_POST['cidade'];
+    $estado = $_POST['estado'];
+    $endereço = $_POST['endereco'];
+    $cep = $_POST['cep'];
+    $cpf = $_POST['cpf'];
+
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,confirmar_senha,login,nome_marterno,genero,
+    data_nascimento,telefone,celular,cidade,endereco,cep,cpf) VALUES ('$nome','$email','$senha','$confirmar_senha','$login','$nome_marterno','$genero',
+    '$data_nascimento','$telefone','$celular','$cidade','$estado','$endereço','$cep','$cpf')");
+}
+?>
     <div id="logoContent">
     <a id="logo" href="../index.html"><img src="../areacliente/imagens/logo_branca.png" alt="logo da telecall" ></a>
     </div>

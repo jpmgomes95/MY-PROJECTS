@@ -2,8 +2,8 @@
 
     $dbHost = 'Localhost';
     $dbUsername = 'root';
-    $dbPassword = '';
-    $dbName = 'banco_telecall';
+    $dbPassword = '166350';
+    $dbName = 'mydb';
 
     $conexao = new mysqli ($dbHost,$dbUsername,$dbPassword,$dbName);
 
